@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
+    <PackageReference Include="MongoDB.Driver" Version="2.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Asseats\Library\jquery\jquery.min.js" />
+    <None Include="wwwroot\Asseats\Library\twitter-bootstrap\css\bootstrap.min.css" />
+    <None Include="wwwroot\Asseats\Library\twitter-bootstrap\js\bootstrap.bundle.js" />
+  </ItemGroup>
+
+</Project>

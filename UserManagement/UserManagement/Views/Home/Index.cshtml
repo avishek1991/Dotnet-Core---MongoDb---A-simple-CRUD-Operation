@@ -1,0 +1,28 @@
+﻿@model IEnumerable<UserModel>
+@*All Student*@
+
+@foreach (var item in Model)
+{
+
+    <div class="col-md-4">
+        <div class="card my-3">
+            <div class="row no-gutters">          
+                <div class="col-md-12">
+                    <div class="card-body">
+
+                        <h6 class="card-text">Name  : @item.Name</h6>
+                        <h6 class="card-title">Email  : @item.Email</h6>
+                        <h6 class="card-text">City  : @item.City</h6>                     
+
+                        <div class="w-100">
+                            <a class="btn btn-primary" asp-route-Id="@item.Id" asp-action="EditUser">Edit</a>
+                            <a class="btn btn-danger" asp-action="DeleteUser" onclick="return confirm('Are You Sure You Want To Delete This Student : @item.Name')" asp-route-Id="@item.Id">Delete</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}

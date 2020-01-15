@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="~/Asseats/Library/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+                <a class="navbar-brand">
+                    <img asp-append-version="true" src="~/Asseats/Images/BrandLogo.png" width="40" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" asp-action="Index" asp-controller="Home">All Users</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" asp-action="CreatUser" asp-controller="Home">Create User</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div><!--End Row-->
+
+        <div class="row">
+            @RenderBody()
+        </div>
+        <script src="~/Asseats/Library/jquery/jquery.min.js"></script>
+        <script src="~/Asseats/Library/twitter-bootstrap/js/bootstrap.bundle.js"></script>
+    </div><!--End Container fluid-->
+</body>
+</html>
